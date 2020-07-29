@@ -10,7 +10,7 @@ def Game(option):
 
     left_field = list_of_things[list_of_things.index(option) - 1 if list_of_things.index(option) != 0 else list_of_things.index(option) : 0 if int(list_of_things.index(option)) - int(list_len) <= 0 else int(list_of_things.index(option)) - int(list_len) - 1 : -1]
     right_field = list_of_things[list_of_things.index(option) + 1 : int(list_of_things.index(option)) + int(list_len) + 1 : 1]
-    
+
     if len(right_field) >= len(left_field):
         if rand_choise in right_field:
             return "Sorry, but computer chose {}".format(rand_choise)
